@@ -12,6 +12,8 @@ Contents:
    :maxdepth: 2
 
 
+   helloworld
+   en/quickstart
 
 Indices and tables
 ==================
