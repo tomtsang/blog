@@ -12,6 +12,7 @@ Contents:
    :maxdepth: 2
 
    k8s/index
+   ceph/index
    helloworld
    en/quickstart
 
