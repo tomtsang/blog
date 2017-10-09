@@ -11,7 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-
+   k8s/index
    helloworld
    en/quickstart
 
