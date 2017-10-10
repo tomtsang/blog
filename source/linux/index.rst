@@ -13,4 +13,5 @@ Contents:
    :numbered: 2
 
    systemd/index
+   grep/index
    command_not_found/index
