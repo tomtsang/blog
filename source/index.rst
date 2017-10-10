@@ -14,6 +14,7 @@ Contents:
    k8s/index
    linux/index
    ceph/index
+   zabbix/index
    helloworld
    en/quickstart
 
