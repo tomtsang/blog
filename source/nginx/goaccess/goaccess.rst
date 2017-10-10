@@ -12,8 +12,8 @@ http://www.jianshu.com/p/33e2e79d0373
 
 http://chenx1242.blog.51cto.com/10430133/1882643
 
-| 192.168.31.240
-| /opt/goaccess-1.2/
+
+192.168.31.240:/opt/goaccess-1.2/
 
 goaccess 安装
 ^^^^^^^^^^^^^^^^^^
@@ -41,18 +41,22 @@ goaccess 安装
 
 使用：
 
-| M1
-| ls /var/log/nginx/access.log
-| tail -f /var/log/nginx/access.log
-| sudo goaccess -a -d -f /var/log/nginx/access.log -p ./goaccess.conf
-| sudo goaccess -a -d -f /var/log/nginx/access.log -p ./goaccess.conf >
-  /home/tom/index.html
+M1
 
-| M2
-| [root@qlw goaccess-1.2]# goaccess -a -d -f
-  /var/log/nginx/8000.access.log -p ./goaccess.conf -o
-  /usr/share/nginx/html/qstation/statistics/report.html –real-time-html
-| WebSocket server ready to accept new client connections
+::
+
+    ls /var/log/nginx/access.log
+    tail -f /var/log/nginx/access.log
+    sudo goaccess -a -d -f /var/log/nginx/access.log -p ./goaccess.conf >
+    sudo goaccess -a -d -f /var/log/nginx/access.log -p ./goaccess.conf
+    /home/tom/index.html
+
+M2
+
+::
+
+    [root@qlw goaccess-1.2]# goaccess -a -d -f /var/log/nginx/8000.access.log -p ./goaccess.conf -o /usr/share/nginx/html/qstation/statistics/report.html –real-time-html
+    WebSocket server ready to accept new client connections
 
 M3
 
