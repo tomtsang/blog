@@ -12,5 +12,5 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   nfs-server
+   nfs-server/index
    nfs-client
