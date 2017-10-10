@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-command not found
-=================
+linux
+==========
 
 Contents:
 
@@ -13,3 +13,4 @@ Contents:
    :numbered: 2
 
    telnet-cnf
+
