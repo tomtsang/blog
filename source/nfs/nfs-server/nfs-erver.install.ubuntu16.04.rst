@@ -1,10 +1,9 @@
 
 
-nfs-server
-==========
-
-Ubuntu 16.04安装NFS server
+nfs-erver.install.ubuntu16.04
 ==========================
+
+Ubuntu 16.04安装NFS server 
 
 reference
 ---------
