@@ -3,26 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to tomtsang's blogs!
-============================
+mysqladmin
+==========
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
+   :numbered: 2
 
-   k8s/index
-   linux/index
-   mysql/index
-   ceph/index
-   zabbix/index
-   helloworld
-   en/quickstart
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+   mysqladmin-flush-hosts
