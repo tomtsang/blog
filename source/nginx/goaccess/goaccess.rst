@@ -1,7 +1,7 @@
 goaccess 安装 使用
 ------------------
 
-referenct
+reference
 ^^^^^^^^^^^
 
 https://goaccess.io/download
