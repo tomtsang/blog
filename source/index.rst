@@ -13,6 +13,7 @@ Contents:
 
    k8s/index
    linux/index
+   nginx/index
    mysql/index
    ceph/index
    zabbix/index
