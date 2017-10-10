@@ -12,5 +12,6 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
+   zabbix-use
    zabbix-debug-level
    zabbix-debug-1
