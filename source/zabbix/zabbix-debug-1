@@ -7,6 +7,70 @@ zabbix-debug-1
 
 ::
 
+	[root@mariadb-node-0 zabbix]# systemctl start zabbix-agent.service 
+	Job for zabbix-agent.service failed because a configured resource limit was exceeded. See "systemctl status zabbix-agent.service" and "journalctl -xe" for details.
+	[root@mariadb-node-0 zabbix]# journalctl -xe
+	10月 10 10:04:08 mariadb-node-0 systemd[1]: Starting Zabbix Agent...
+	-- Subject: Unit zabbix-agent.service has begun start-up
+	-- Defined-By: systemd
+	-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+	-- 
+	-- Unit zabbix-agent.service has begun starting up.
+	10月 10 10:04:08 mariadb-node-0 systemd[1]: PID file /var/run/zabbix/zabbix_agentd.pid not readable (yet?) after start.
+	10月 10 10:04:08 mariadb-node-0 systemd[1]: zabbix-agent.service: Supervising process 124777 which is not our child. We'll most like
+	10月 10 10:04:08 mariadb-node-0 systemd[1]: zabbix-agent.service: main process exited, code=exited, status=1/FAILURE
+	10月 10 10:04:08 mariadb-node-0 kill[124779]: kill: 向 124777 发送信号失败: 没有那个进程
+	10月 10 10:04:08 mariadb-node-0 systemd[1]: zabbix-agent.service: control process exited, code=exited status=1
+	10月 10 10:04:08 mariadb-node-0 systemd[1]: Failed to start Zabbix Agent.
+	-- Subject: Unit zabbix-agent.service has failed
+	-- Defined-By: systemd
+	-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+	-- 
+	-- Unit zabbix-agent.service has failed.
+	-- 
+	-- The result is failed.
+	10月 10 10:04:08 mariadb-node-0 systemd[1]: Unit zabbix-agent.service entered failed state.
+	10月 10 10:04:08 mariadb-node-0 systemd[1]: zabbix-agent.service failed.
+	10月 10 10:04:18 mariadb-node-0 systemd[1]: zabbix-agent.service holdoff time over, scheduling restart.
+	10月 10 10:04:18 mariadb-node-0 systemd[1]: Starting Zabbix Agent...
+	-- Subject: Unit zabbix-agent.service has begun start-up
+	-- Defined-By: systemd
+	-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+	-- 
+	-- Unit zabbix-agent.service has begun starting up.
+	10月 10 10:04:18 mariadb-node-0 systemd[1]: PID file /var/run/zabbix/zabbix_agentd.pid not readable (yet?) after start.
+	10月 10 10:04:18 mariadb-node-0 systemd[1]: zabbix-agent.service: Supervising process 125011 which is not our child. We'll most like
+	10月 10 10:04:18 mariadb-node-0 systemd[1]: Started Zabbix Agent.
+	-- Subject: Unit zabbix-agent.service has finished start-up
+	-- Defined-By: systemd
+	-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+	-- 
+	-- Unit zabbix-agent.service has finished starting up.
+	-- 
+	-- The start-up result is done.
+	10月 10 10:04:18 mariadb-node-0 systemd[1]: zabbix-agent.service: main process exited, code=exited, status=1/FAILURE
+	10月 10 10:04:18 mariadb-node-0 kill[125014]: 用法：
+	10月 10 10:04:18 mariadb-node-0 kill[125014]: kill [选项] <pid|名称> [...]
+	10月 10 10:04:18 mariadb-node-0 kill[125014]: 选项：
+	10月 10 10:04:18 mariadb-node-0 kill[125014]: -a, --all              不限于只对和当前进程的用户 id 相同的进程进行
+	10月 10 10:04:18 mariadb-node-0 kill[125014]: 名称-进程id 转换
+	10月 10 10:04:18 mariadb-node-0 kill[125014]: -s, --signal <信号>     发送指定的信号
+	10月 10 10:04:18 mariadb-node-0 kill[125014]: -q, --queue <信号>      使用 sigqueue(2) 代替 kill(2)
+	10月 10 10:04:18 mariadb-node-0 systemd[1]: zabbix-agent.service: control process exited, code=exited status=1
+	10月 10 10:04:18 mariadb-node-0 kill[125014]: -p, --pid              打印 pid 而不向它们发送信号
+	10月 10 10:04:18 mariadb-node-0 kill[125014]: -l, --list [=<信号>]   列出信号名，或将一个信号转换为名称
+	10月 10 10:04:18 mariadb-node-0 kill[125014]: -L, --table            列出信号名和数值
+	10月 10 10:04:18 mariadb-node-0 kill[125014]: -h, --help     显示此帮助并退出
+	10月 10 10:04:18 mariadb-node-0 kill[125014]: -V, --version  输出版本信息并退出
+	10月 10 10:04:18 mariadb-node-0 kill[125014]: 更多信息请参阅 kill(1)。
+	10月 10 10:04:18 mariadb-node-0 systemd[1]: Unit zabbix-agent.service entered failed state.
+	10月 10 10:04:18 mariadb-node-0 systemd[1]: zabbix-agent.service failed.
+	[root@mariadb-node-0 zabbix]# 
+
+查进程，查日志
+
+::
+
 	[root@mariadb-node-0 zabbix]# ps -ef | grep zabbix
 	root     132576 131957  0 10:15 pts/2    00:00:00 grep --color=auto zabbix
 	[root@mariadb-node-0 zabbix]# tail -f /var/log/zabbix/zabbix_agentd.log 
