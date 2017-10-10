@@ -16,5 +16,7 @@ telnet 是挂在 xinetd 底下的，所以同时查看是否安装了xinetd服�
     xinetd-2.3.14-39.el6_4.x86_64
 
 两者都没有的安装的话，yum安装以下服务
+
 ::
+
     yum install xinetd telnet telnet-server -y
