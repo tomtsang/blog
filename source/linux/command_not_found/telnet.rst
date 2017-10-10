@@ -1,3 +1,7 @@
+
+telnet
+------
+
 http://www.linuxidc.com/Linux/2016-01/127983.htm
 
 一.CentOS下查看系统是否已安装telnet
