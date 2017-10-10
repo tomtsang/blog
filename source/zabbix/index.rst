@@ -13,3 +13,4 @@ Contents:
    :numbered: 2
 
    zabbix-debug-level
+   zabbix-debug-1
