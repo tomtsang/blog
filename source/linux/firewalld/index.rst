@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-linux
+firewalld
 ==========
 
 Contents:
@@ -12,7 +12,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   systemd/index
-   grep/index
-   command_not_found/index
-   firewalld/index
+   firewalld
