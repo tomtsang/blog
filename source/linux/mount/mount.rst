@@ -14,6 +14,7 @@ ls /home/jlch/
 最后, 农总, 发现是 某一个 device, 出错了, 导致的..
 
 ::
+
     这个时候的表现是 高load average, 低cpu占用, 且 通过 top , 查不到进程占用资源. ps aux 也查不出(当然查不出, mount是直接操作到内核中, 并不是进程)
 
 所以, 没事, 不要随便 mount, 且手工 Mount 后一定要及时 umount .
