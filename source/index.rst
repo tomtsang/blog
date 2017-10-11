@@ -15,6 +15,7 @@ Contents:
    linux/index
    nginx/index
    mysql/index
+   html/index
    nfs/index
    ceph/index
    zabbix/index
