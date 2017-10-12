@@ -5,6 +5,8 @@
 redis
 ^^^^^^^^
 
+::
+
 	tar -zxvf redis.tar.gz
 	
 nginx
