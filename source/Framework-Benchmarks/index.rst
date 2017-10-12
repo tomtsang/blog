@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Web Framewosrk Benchmarks
-==========
+===================
 
 Contents:
 
@@ -12,4 +12,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   Web Framewosrk Benchmarks
+   Web-Framewosrk-Benchmarks/index
