@@ -13,13 +13,14 @@ Contents:
 
    k8s/index
    linux/index
-   Web Framewosrk Benchmarks/index
+   Framewosrk-Benchmarks/index
    nginx/index
    mysql/index
    html/index
    nfs/index
    ceph/index
    zabbix/index
+   jlch/index
    helloworld
    en/quickstart
 
