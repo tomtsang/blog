@@ -12,5 +12,6 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
+   redis-cluster-del-key
    redis-cluster-requirepass
    redis-cluster-requirepass-auth
