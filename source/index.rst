@@ -13,6 +13,7 @@ Contents:
 
    k8s/index
    linux/index
+   redis/index
    Framewosrk-Benchmarks/index
    nginx/index
    mysql/index
