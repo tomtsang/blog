@@ -13,3 +13,4 @@ Contents:
    :numbered: 2
 
    redis-cluster-requirepass
+   redis-cluster-requirepass-auth
