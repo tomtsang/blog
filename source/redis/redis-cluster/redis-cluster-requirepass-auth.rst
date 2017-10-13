@@ -6,6 +6,14 @@ redis-cluster-requirepass-auth
 
 redis-cluster-requirepass-auth 配置密码时，一定要另加一句 `AUTH wudang`
 
+reference
+^^^^^^^^^^^
+
+
+http://www.yiibai.com/redis/connection_auth.html
+http://bbs.csdn.net/topics/391824759?page=1
+
+
 ::
 
     [jlch@check ~]$ redis-cli -h 192.168.31.166 -p 7000 -a wudang -c
