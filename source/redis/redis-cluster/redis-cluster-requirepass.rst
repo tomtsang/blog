@@ -1,10 +1,10 @@
 
- =======================
- redis-cluster conf 配置 requirepass
- ========================
+=======================
+redis-cluster conf 配置 requirepass
+========================
 
-  line1
-  =====
+line1
+=====
 
 
 env
