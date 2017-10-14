@@ -12,6 +12,7 @@ Contents:
    :maxdepth: 2
 
    k8s/index
+   fat/index
    linux/index
    redis/index
    Framewosrk-Benchmarks/index
