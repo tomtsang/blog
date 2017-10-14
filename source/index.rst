@@ -15,7 +15,7 @@ Contents:
    fat/index
    linux/index
    redis/index
-   Framewosrk-Benchmarks/index
+   Framework-Benchmarks/index
    nginx/index
    mysql/index
    html/index
