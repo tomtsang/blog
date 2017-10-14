@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-ceph
-==========
+ceph install
+=============
 
 Contents:
 
@@ -12,5 +12,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   cephfs/index
-   ceph.install/index
+   install-by-docker
