@@ -23,6 +23,7 @@ Contents:
    ceph/index
    tools/index
    zabbix/index
+   code/index
    jlch/index
    helloworld
    en/quickstart
