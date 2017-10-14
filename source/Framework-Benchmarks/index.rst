@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Framewosrk Benchmarks
+Framework Benchmarks
 ======================
 
 Contents:
@@ -12,4 +12,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   Framewosrk-Benchmarks/index
+   Framework-Benchmarks/index
