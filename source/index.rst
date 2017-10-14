@@ -20,6 +20,7 @@ Contents:
    html/index
    nfs/index
    ceph/index
+   tools/index
    zabbix/index
    jlch/index
    helloworld
