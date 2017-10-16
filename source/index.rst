@@ -23,6 +23,7 @@ Contents:
    ceph/index
    tools/index
    zabbix/index
+   ruby/index
    code/index
    jlch/index
    helloworld
