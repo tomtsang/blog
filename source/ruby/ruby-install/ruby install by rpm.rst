@@ -44,3 +44,9 @@ ruby
 	gem list --local
 	ruby -v
 	
+卸载 ruby 
+
+::
+
+    [root@localhost ruby-install-by-rpm]# cat rm.sh
+    rpm -ef rubygem-io-console-0.4.2-30.el7.x86_64 rubygem-psych-2.0.0-30.el7.x86_64 rubygems-2.0.14.1-30.el7.noarch ruby-irb-2.0.0.648-30.el7.noarch ruby-libs-2.0.0.648-30.el7.x86_64 rubygem-bigdecimal-1.2.0-30.el7.x86_64 rubygem-json-1.7.7-30.el7.x86_64 ruby-2.0.0.648-30.el7.x86_64 rubygem-rdoc-4.0.0-30.el7.noarch
