@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-ruby
-==========
+gem install package
+========================
 
 Contents:
 
@@ -12,5 +12,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   ruby-install/index
-   gem-install/index
+   gem-install-redis
