@@ -23,8 +23,9 @@ Contents:
    ceph/index
    tools/index
    zabbix/index
-   jenkins/index
    ruby/index
+   jenkins/index
+   harbor/index
    code/index
    jlch/index
    helloworld
