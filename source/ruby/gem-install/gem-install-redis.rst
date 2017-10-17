@@ -11,6 +11,6 @@ https://rubygems.org/gems/redis/versions/3.3.5
 	ls /home/jlch/
 	pwd
     wget https://rubygems.org/downloads/redis-3.3.5.gem
-	gem install /home/jlch/redis-4.0.1.gem  ## 报错
+	gem install /home/jlch/redis-4.0.1.gem  ## ruby-2.4 会成功，其它报错
 	gem install /home/jlch/redis-4.0.0.gem  ## 报错
 	gem install /home/jlch/redis-3.3.5.gem  ## 成功

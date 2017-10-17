@@ -13,3 +13,4 @@ Contents:
    :numbered: 2
 
    ruby install by rpm
+   ruby-2.4-install-by-rpm
