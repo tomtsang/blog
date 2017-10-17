@@ -22,12 +22,24 @@ http://skyseraph.com/2016/07/18/Tools/Jenkins%20Gitlab%E6%8C%81%E7%BB%AD%E9%9B%8
 
 测试
 
+line 1
+^^^^^^^^^^^^^^
+
 http://www.showerlee.com/archives/1880
+
+妈呀，没有开 firewalld, 导致这台机器安装不了
+
+line2
+^^^^^^^^^^^^^^^
 
 http://www.jianshu.com/p/64b498304d07
 
+line3
+^^^^^^^^^^^^^^^
 http://www.cnblogs.com/wangkuan/p/5440149.html
 
+line4
+^^^^^^^^^^^^^^^
 https://rc.mbd.baidu.com/9wx0qbp
 
 
