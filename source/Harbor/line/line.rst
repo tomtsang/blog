@@ -1,8 +1,8 @@
 ============
-linux tools
+harbor line
 ============
 
-tldr
-^^^^^^
+http://www.infoq.com/cn/news/2017/03/jd-kubernetes-openstack
 
-https://github.com/tldr-pages/tldr
+http://blog.kubernetes.io/2017/02/inside-jd-com-shift-to-kubernetes-from-openstack.html
+
