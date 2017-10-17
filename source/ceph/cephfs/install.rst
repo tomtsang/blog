@@ -24,6 +24,8 @@ line1 官网
     mds.0: 192.168.31.113   cephfs3
     mds.1: 192.168.31.114   cephfs4
 
+还是要结合一下 https://linux.cn/article-8182-1.html 
+
 line2
 ^^^^^^^
 
