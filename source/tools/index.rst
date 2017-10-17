@@ -13,3 +13,4 @@ Contents:
    :numbered: 2
 
    linux/index
+   windows/index
