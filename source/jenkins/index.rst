@@ -13,5 +13,5 @@ Contents:
    :numbered: 2
 
    line/index
-   install
+   install/index
    test
