@@ -22,12 +22,16 @@ http://skyseraph.com/2016/07/18/Tools/Jenkins%20Gitlab%E6%8C%81%E7%BB%AD%E9%9B%8
 
 测试
 
+line
+^^^^^^^^^^^^^^^^
+
+http://www.jianshu.com/p/052a2401595a
+
 line 1
 ^^^^^^^^^^^^^^
 
 http://www.showerlee.com/archives/1880
 
-妈呀，没有开 firewalld, 导致这台机器安装不了
 
 line2
 ^^^^^^^^^^^^^^^
@@ -41,6 +45,24 @@ http://www.cnblogs.com/wangkuan/p/5440149.html
 line4
 ^^^^^^^^^^^^^^^
 https://rc.mbd.baidu.com/9wx0qbp
+
+
+妈呀，没有开 firewalld, 导致这台机器安装不了
+
+
+line
+^^^^^^^^^^^^^^
+
+http://www.moye.me/2016/03/03/nodejs_ci_by_jenkins/
+https://johnhamelink.com/2012/11/13/testing-nodejs-with-jenkins
+https://cnodejs.org/topic/58439ca33ebad99b336b1d50
+https://codeforgeek.com/2016/04/continuous-integration-deployment-jenkins-node-js/
+https://mp.weixin.qq.com/s/ETo_IGKu8ia0uWFs798arw
+
+http://www.cnblogs.com/moye/p/nodejs_project_with_jenkins_ci.html
+https://www.jianyujianyu.com/using-github-and-jenkins-deploy-hexo/
+https://www.ctolib.com/topics-120724.html
+https://segmentfault.com/a/1190000010200161
 
 
 
