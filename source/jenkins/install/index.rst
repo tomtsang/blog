@@ -13,3 +13,4 @@ Contents:
    :numbered: 2
 
    jenkins-install-centos-yum
+   jenkins-install-jenkins.war
