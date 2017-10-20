@@ -15,3 +15,5 @@ Contents:
    redis-cluster-del-key
    redis-cluster-requirepass
    redis-cluster-requirepass-auth
+   redis-cluster-command
+   redis-sentinel
