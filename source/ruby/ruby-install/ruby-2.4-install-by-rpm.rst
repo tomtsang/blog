@@ -5,6 +5,8 @@ ruby 2.4 install by rpm
 ruby
 ^^^^
 
+相关 sh 脚本，可见 https://gitee.com/tomt/tom_ruby_install_by_rpm
+
 去 源 http://mirrors.aliyun.com/centos/7/os/x86_64/Packages/ 下载 必要的包 
 
 ::
