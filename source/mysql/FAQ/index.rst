@@ -13,3 +13,4 @@ Contents:
    :numbered: 2
 
    Name or service not known
+   mysql-takes-too-long-on-checking-permissions
