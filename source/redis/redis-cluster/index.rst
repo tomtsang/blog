@@ -17,3 +17,4 @@ Contents:
    redis-cluster-requirepass-auth
    redis-cluster-command
    redis-sentinel
+   redis-conf-deploy
