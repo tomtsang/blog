@@ -36,3 +36,5 @@ root 用户
     hello-world         latest              1815c82652c0        4 months ago        1.84kB
     root@k-m:/home/jlch# docker tag ceph/daemon reg.jlch.com:5000/ceph/daemon:latest
     root@k-m:/home/jlch# docker push reg.jlch.com:5000/ceph/daemon:latest
+
+
