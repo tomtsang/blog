@@ -14,3 +14,4 @@ Contents:
 
    keyboards
    platform
+   data-source
