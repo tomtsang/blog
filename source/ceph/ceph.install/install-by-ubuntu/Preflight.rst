@@ -22,21 +22,39 @@ ceph-admin 节点：
 
 ::
 
-        cephu@cephadmin:~/my-cluster$ cat ~/.ssh/config
-        Host node0
-            Hostname cephadmin
-            User cephu
-        Host node1
-            Hostname mon1
-            User cephu
-        Host node2
-            Hostname cephfsn2
-            User cephu
-        Host node3
-            Hostname cephfsn3
-            User cephu
-        cephu@cephadmin:~/my-cluster$
+    cephu@cephadmin:~/my-cluster$ cat ~/.ssh/config
+    Host node0
+        Hostname cephadmin
+        User cephu
+    Host node1
+        Hostname mon1
+        User cephu
+    Host node2
+        Hostname cephfsn2
+        User cephu
+    Host node3
+        Hostname cephfsn3
+        User cephu
+    cephu@cephadmin:~/my-cluster$
 
+这里，我后来想了一下，应该把这个地方，修改成 全用 node0, node1, node2, node3, 然后，各节点的　Hostname 也修改成这些，这样子才是真的方便安装。如下：
+
+::
+
+    cephu@cephadmin:~/my-cluster$ cat ~/.ssh/config
+    Host node0
+        Hostname node0
+        User cephu
+    Host node1
+        Hostname node1
+        User cephu
+    Host node2
+        Hostname node2
+        User cephu
+    Host node3
+        Hostname node3
+        User cephu
+    cephu@cephadmin:~/my-cluster$
 
 存储节点：
 ^^^^^^^^^^^^^^^^^
