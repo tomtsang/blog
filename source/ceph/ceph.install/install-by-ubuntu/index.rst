@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-ceph install
-=============
+ceph install by ubuntu
+==========================
 
 Contents:
 
@@ -12,6 +12,7 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   install-by-docker
-   install.FAQ
-   install-by-ubuntu/index
+   README
+   Preflight   
+   Storage Cluster Quick Start
+   Block Device Quick Start
