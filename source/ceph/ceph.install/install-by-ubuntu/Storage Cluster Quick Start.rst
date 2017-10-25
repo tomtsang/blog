@@ -574,3 +574,30 @@ STORING/RETRIEVING OBJECT DATA
 
 这一个小节，现在先不动。
 
+算了，还是动吧。
+
+::
+
+    cephu@cephadmin:~/my-cluster$ sudo apt install ceph-common -y
+    cephu@cephadmin:~/my-cluster$ ls /etc/ceph/*
+    cephu@cephadmin:~/my-cluster$ ceph-deploy admin cephadmin
+    cephu@cephadmin:~/my-cluster$ ls /etc/ceph/*  ## 这里可以看到新增3个文件
+    cephu@cephadmin:~/my-cluster$ ceph-deploy gatherkeys cephadmin
+
+
+在 admin 与 ceph-client 节点，都运行一下。
+
+::
+
+    jlch@k-m:/etc/apt/sources.list.d$ sudo chmod +r /etc/ceph/ceph.client.admin.keyring
+
+现在可以开始执行命令了
+
+::
+
+        jlch@k-m:/etc/apt/sources.list.d$ echo {Test-data} > testfile.txt
+        jlch@k-m:/etc/apt/sources.list.d$ ceph osd pool create mytest 8
+        jlch@k-m:/etc/apt/sources.list.d$ rados put test-object-1 testfile.txt --pool=mytest
+        jlch@k-m:/etc/apt/sources.list.d$ rados -p mytest ls
+        jlch@k-m:/etc/apt/sources.list.d$ ceph osd map mytest test-object-1
+
