@@ -89,7 +89,7 @@ KERNEL DRIVER
     cephu@cephadmin:~/my-cluster$ sudo mount -t ceph 192.168.31.114:6789:/ /mnt/mycephfs -o name=admin,secretfile=admin.secret
     cephu@cephadmin:~/my-cluster$ 
 
-如下可以看出， cephfs 将3个物理节点上的磁盘全部空间作为了自己的空间。
+如下可以看出， cephfs 将3个物理节点上的磁盘全部空间（82G = 16G + 16G + 50G）作为了自己的空间。
 
 ::
 
@@ -108,6 +108,7 @@ KERNEL DRIVER
     /dev/loop3                    84M   84M     0 100% /snap/core/3247
     192.168.31.114:6789:/         82G  4.2G   78G   6% /mnt/mycephfs
     cephu@cephadmin:~/my-cluster$
+
 
 FILESYSTEM IN USER SPACE (FUSE)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -269,6 +270,63 @@ ceph-client节点：
     cephu@ceph-client:~$
 
 OK。成功。
+
+umount
+^^^^^^^^^^^
+
+到我们这个文档结束的时候，记得要 umount 一下哟。（这里只写 admin节点了，ceph-client节点是一样样的。）
+
+admin:
+
+::
+
+    cephu@cephadmin:~/my-cluster$ sudo umount /mnt/mycephfs
+
+检查一下：
+
+::
+
+    cephu@cephadmin:~/my-cluster$ mount
+    sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+    proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+    udev on /dev type devtmpfs (rw,nosuid,relatime,size=4067352k,nr_inodes=1016838,mode=755)
+    devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+    tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=817512k,mode=755)
+    /dev/mapper/ubuntu--vg-root on / type ext4 (rw,relatime,errors=remount-ro,data=ordered)
+    securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+    tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+    tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+    tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+    cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/lib/systemd/systemd-cgroups-agent,name=systemd)
+    pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+    cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+    cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+    cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+    cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+    cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+    cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+    cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+    cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+    cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,hugetlb)
+    cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
+    systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=27,pgrp=1,timeout=0,minproto=5,maxproto=5,direct)
+    mqueue on /dev/mqueue type mqueue (rw,relatime)
+    hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime)
+    debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+    fusectl on /sys/fs/fuse/connections type fusectl (rw,relatime)
+    /var/lib/snapd/snaps/core_3017.snap on /snap/core/3017 type squashfs (ro,nodev,relatime)
+    /var/lib/snapd/snaps/core_2898.snap on /snap/core/2898 type squashfs (ro,nodev,relatime)
+    /dev/sda1 on /boot type ext2 (rw,relatime,block_validity,barrier,user_xattr,acl)
+    lxcfs on /var/lib/lxcfs type fuse.lxcfs (rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other)
+    /dev/mapper/ubuntu--vg-root on /var/lib/docker/aufs type ext4 (rw,relatime,errors=remount-ro,data=ordered)
+    tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=817512k,mode=700,uid=1000,gid=1000)
+    /var/lib/snapd/snaps/core_3247.snap on /snap/core/3247 type squashfs (ro,nodev,relatime)
+    tmpfs on /run/snapd/ns type tmpfs (rw,nosuid,noexec,relatime,size=817512k,mode=755)
+    nsfs on /run/snapd/ns/core.mnt type nsfs (rw)
+    cephu@cephadmin:~/my-cluster$
+
+确实没有了。安心。
+
 
 到此，应该这一小节结束。
 喝杯水，压压惊！~~~~~~~~~~
