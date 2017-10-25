@@ -264,6 +264,8 @@ ceph-client节点：
 文件是看到了。
 创建一下。
 
+::
+
     cephu@ceph-client:~$ echo "c" > mycephfs/b.txt
     cephu@ceph-client:~$ cat mycephfs/b.txt
     c
