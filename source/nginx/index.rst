@@ -13,3 +13,4 @@ Contents:
    :numbered: 2
 
    goaccess/index
+   big-data-1g-download-failure
