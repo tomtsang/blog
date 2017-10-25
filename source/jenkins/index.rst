@@ -15,3 +15,4 @@ Contents:
    line/index
    install/index
    test
+   followtheofficial
