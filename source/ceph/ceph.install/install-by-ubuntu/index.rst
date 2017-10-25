@@ -16,3 +16,5 @@ Contents:
    Preflight   
    Storage Cluster Quick Start
    Block Device Quick Start
+   Filesystem Quick Start
+   Object Storage Quick Start
