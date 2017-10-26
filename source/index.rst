@@ -26,6 +26,7 @@ Contents:
    ruby/index
    jenkins/index
    harbor/index
+   soft-test/index
    code/index
    jlch/index
    helloworld
