@@ -27,6 +27,7 @@ Contents:
    jenkins/index
    harbor/index
    soft-test/index
+   vsphere/index
    code/index
    jlch/index
    helloworld
