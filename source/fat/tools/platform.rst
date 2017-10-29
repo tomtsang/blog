@@ -34,6 +34,11 @@ https://www.ricequant.com/
 
 http://rqalpha.io/zh_CN/latest/intro/overview.html
 
+nodequant
+^^^^^^^^^^^^^^^^
+
+https://github.com/tomtsang/nodequant
+
 不知道开源不开源
 ==================
 
@@ -61,6 +66,11 @@ bigquant
 
 https://bigquant.com/
 
+
+windquant
+^^^^^^^^^^^^^^
+
+https://www.windquant.com/
 
 国外量化平台
 =============
