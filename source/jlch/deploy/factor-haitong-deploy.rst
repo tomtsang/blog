@@ -18,7 +18,7 @@ nginx
 	wget http://nginx.org/packages/centos/7/x86_64/RPMS/nginx-1.12.1-1.el7.ngx.x86_64.rpm
 	ls
 	rpm -ivh nginx-1.12.1-1.el7.ngx.x86_64.rpm
-	sudo  rpm -ivh nginx-1.12.1-1.el7.ngx.x86_64.rpm
+	sudo rpm -ivh nginx-1.12.1-1.el7.ngx.x86_64.rpm
 	ls
 	which nginx
 	ls /etc/nginx/conf.d/
@@ -28,7 +28,6 @@ nodejs
 ^^^^^^^^
 
 ::
-
 
 	ls
 	which xz
@@ -81,6 +80,10 @@ pm2
 	cd
 	pm2 l
 
+如果这里出错了，可能是因为之前操作过pm2, 所以请将 ~/.pm2/ 删除，也就是
+	rm -rf ~/.pm2/
+
+	
 factor_svr
 ^^^^^^^^
 
