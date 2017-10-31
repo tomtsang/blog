@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-jlch
-==========
+jlch record
+=============
 
 Contents:
 
@@ -12,6 +12,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   deploy/index
-   openx/index
-   record/index
+   zhongtai-a
