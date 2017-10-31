@@ -12,5 +12,6 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   cephfs-k8s-make
+   cephfs-stateful
    cephfs-k8s-make-by-go-get
+   cephfs-k8s-make
