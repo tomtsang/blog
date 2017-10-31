@@ -1,0 +1,84 @@
+
+============
+181. config
+============
+
+::
+
+    [root@check my.cnf.d]# cat /etc/my.cnf.d/server.cnf
+    #
+    # These groups are read by MariaDB server.
+    # Use it for options that only the server (but not clients) should see
+    #
+    # See the examples of server my.cnf files in /usr/share/mysql/
+    #
+
+    # this is read by the standalone daemon and embedded servers
+    [server]
+
+    # this is only for the mysqld standalone daemon
+    [mysqld]
+    datadir=/data/mariadb/mysql
+    socket=/var/lib/mysql/mysql.sock
+    #default-character-set=utf8
+    character_set_server=utf8
+    log-bin=mysql.server
+    slow_query_log=on
+    slow_query_log_file=/data/mariadb/mysql/slow_query_log.log
+    long_query_time=2
+    event_scheduler=on
+
+    max_connections = 1000
+    max_allowed_packet = 8M
+    thread_cache_size=64
+    log_slow_admin_statements=1
+    log_slow_slave_statements=1
+    sort_buffer_size = 80M
+    read_buffer_size = 80M
+    join_buffer_size = 80M
+    max_length_for_sort_data=9196
+    tmp_table_size = 57108864
+    innodb_log_file_size= 300M
+    innodb_log_files_in_group=6
+    innodb_log_buffer_size=450M
+    innodb_write_io_threads = 8
+    innodb_read_io_threads = 8
+    innodb_buffer_pool_size=4G
+    innodb_buffer_pool_instances=6
+
+
+    # this is only for embedded server
+    [embedded]
+
+    # This group is only read by MariaDB-5.5 servers.
+    # If you use the same .cnf file for MariaDB of different versions,
+    # use this group for options that older servers don't understand
+    [mysqld-5.5]
+
+    # These two groups are only read by MariaDB servers, not by MySQL.
+    # If you use the same .cnf file for MySQL and MariaDB,
+    # you can put MariaDB-only options here
+    [mariadb]
+
+    [mariadb-5.5]
+
+    [root@check my.cnf.d]# 
+
+-------------
+
+::
+
+    innodb_buffer_pool_size=4G  
+    
+表示占用内存4G, 181这台机器内存共16G. 如果这个地方设置成 8G, 则会真实使用到 12.8G(16*0.8) 以上，导致监控报警。
+
+
+::
+
+    innodb_log_file_size= 300M
+    innodb_log_files_in_group=6
+
+表示，日志文件大小，如果这个太小了，会导致mysql 写入速度变慢。
+默认是 2组，每组 5M。太小了。
+现在就是 6组，每组 300M。
+
