@@ -13,3 +13,4 @@ Contents:
    :numbered: 2
 
    cephfs-k8s-make
+   cephfs-k8s-make-by-go-get
