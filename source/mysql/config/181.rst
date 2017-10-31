@@ -46,7 +46,7 @@
     innodb_buffer_pool_size=4G
     innodb_buffer_pool_instances=6
 
-
+    log_bin_trust_function_creators = 1
     # this is only for embedded server
     [embedded]
 
@@ -66,6 +66,8 @@
 
 -------------
 
+p1
+^^^^^^
 ::
 
     innodb_buffer_pool_size=4G  
@@ -73,6 +75,8 @@
 表示占用内存4G, 181这台机器内存共16G. 如果这个地方设置成 8G, 则会真实使用到 12.8G(16*0.8) 以上，导致监控报警。
 
 
+p2
+^^^^^^
 ::
 
     innodb_log_file_size= 300M
@@ -91,5 +95,44 @@
     3. 修改 server.cnf 文件将 配置加入
     4. start mysql
 
+p3
+^^^^^^
+::
+
+    log_bin_trust_function_creators = 1
+
+这个参数相当于：
+在你的会话级运行一下这个语句：SET GLOBAL log_bin_trust_function_creators = 1;
+
+::
+
+    [jlch@check ~]$ mysql -u root -p 
+    Enter password: 
+    Welcome to the MariaDB monitor.  Commands end with ; or \g.
+    Your MariaDB connection id is 5482
+    Server version: 5.5.44-MariaDB-log MariaDB Server
+
+    Copyright (c) 2000, 2015, Oracle, MariaDB Corporation Ab and others.
+
+    Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+    MariaDB [(none)]> SET GLOBAL log_bin_trust_function_creators = 1;
+    Query OK, 0 rows affected (0.00 sec)
+
+    MariaDB [(none)]> show variables like '%log_bin_trust_function_creators%';
+    +---------------------------------+-------+
+    | Variable_name                   | Value |
+    +---------------------------------+-------+
+    | log_bin_trust_function_creators | ON    |
+    +---------------------------------+-------+
+    1 row in set (0.00 sec)
+
+    MariaDB [(none)]> exit
+    Bye
+    [jlch@check ~]$ 
+
+好了，看到上面是 on 了。哈哈。
 
 
+p4
+^^^^^^
