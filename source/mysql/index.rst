@@ -15,3 +15,4 @@ Contents:
    mysqladmin/index
    FAQ/index
    jlch
+   config/index
