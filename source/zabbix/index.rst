@@ -15,3 +15,4 @@ Contents:
    zabbix-use
    zabbix-debug-level
    zabbix-debug-1
+   zabbix-bug-spell
