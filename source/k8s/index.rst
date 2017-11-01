@@ -14,3 +14,4 @@ Contents:
 
    storage
    cephfs/index
+   source
