@@ -13,7 +13,7 @@ tick signals debug
 
 ::
 
-    node quote_player.js SZ
+    node quote_player.js 201710311448
 
 redis 查看效果
 ===================
