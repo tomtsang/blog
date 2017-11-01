@@ -20,3 +20,4 @@ Contents:
    firewalld/index
    snapd/index
    fsck/index
+   shell/index
