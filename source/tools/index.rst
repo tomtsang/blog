@@ -14,3 +14,4 @@ Contents:
 
    linux/index
    windows/index
+   postgresql
