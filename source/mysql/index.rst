@@ -16,3 +16,4 @@ Contents:
    FAQ/index
    jlch
    config/index
+   mysql-use
