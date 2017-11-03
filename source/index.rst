@@ -21,6 +21,9 @@ Contents:
    html/index
    nfs/index
    ceph/index
+   vs-code/index
+   ubuntu/index
+   javascript/index
    tools/index
    zabbix/index
    ruby/index
