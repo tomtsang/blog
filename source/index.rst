@@ -18,6 +18,7 @@ Contents:
    Framework-Benchmarks/index
    nginx/index
    mysql/index
+   mongodb/index
    html/index
    nfs/index
    ceph/index
