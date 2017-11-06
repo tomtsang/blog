@@ -12,6 +12,8 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
+   install/index
    storage
    cephfs/index
    source
+
