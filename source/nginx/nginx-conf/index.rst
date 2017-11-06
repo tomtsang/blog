@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-nginx
+nginx conf
 ==========
 
 Contents:
@@ -12,7 +12,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   nginx-conf/index
-   goaccess/index
-   big-data-1g-download-failure
-   nginx-install-by-rpm
+   nginx-conf-server_name
