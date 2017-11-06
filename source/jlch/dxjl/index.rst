@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-jlch
+短线精灵
 ==========
 
 Contents:
@@ -12,7 +12,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   deploy/index
-   openx/index
-   record/index
-   dxjl/index
+   vol/index
