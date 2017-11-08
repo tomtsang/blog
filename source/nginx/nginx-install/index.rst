@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-nginx
-==========
+nginx-install
+=======================
 
 Contents:
 
@@ -12,8 +12,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   nginx-install/index
-   nginx-conf/index
-   goaccess/index
-   big-data-1g-download-failure
-   nginx-install-by-rpm
+   nginx-install-ubuntu
