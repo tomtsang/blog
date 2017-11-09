@@ -16,3 +16,4 @@ Contents:
    factor-haitong-deploy-b
    factor-haitong-deploy
    duanxianjingling-haitong
+   transmitter
