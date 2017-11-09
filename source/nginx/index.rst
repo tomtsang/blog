@@ -15,6 +15,7 @@ Contents:
    nginx-install/index
    nginx-conf/index
    goaccess/index
+   nginx-url-rewrite/index
    big-data-1g-download-failure
    nginx-install-by-rpm
    location
