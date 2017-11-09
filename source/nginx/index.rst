@@ -17,3 +17,4 @@ Contents:
    goaccess/index
    big-data-1g-download-failure
    nginx-install-by-rpm
+   location
