@@ -3,8 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-jenkins.io
-==========
+
+building-a-node-js-and-react-app-with-npm
+=====================================================================
 
 Contents:
 
@@ -12,4 +13,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   doc/index
+   building-a-node-js-and-react-app-with-npm
