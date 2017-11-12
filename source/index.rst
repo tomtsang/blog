@@ -16,6 +16,7 @@ Contents:
    linux/index
    redis/index
    Framework-Benchmarks/index
+   python/index
    nginx/index
    mysql/index
    mongodb/index
