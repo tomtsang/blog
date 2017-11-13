@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-tools
+python-use
 ==========
 
 Contents:
@@ -12,8 +12,5 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   linux/index
-   windows/index
-   postgresql
-   kindle/index
-   Jolt/index
+   
+   python-shell-cls
