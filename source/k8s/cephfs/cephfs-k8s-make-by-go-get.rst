@@ -10,14 +10,14 @@ cephfs-k8s-make-by-go-get
 	export PATH=$PATH:/home/jlch/go/bin
 
 验证go 
-=========
+=============================
 
 ::
 
 	go version
 	
 配置 GOPATH
-===============
+=============================
 
 ::
 
@@ -25,14 +25,14 @@ cephfs-k8s-make-by-go-get
 	export GOPATH=/home/jlch/gopath/
 
 go get 
-====================
+=============================
 
 ::
 
 	go get github.com/kubernetes-incubator/external-storage
 
 配置 Dockerfile
-================
+=============================
 
 后来发现 docker image 的文件不对。
 
@@ -78,14 +78,35 @@ go get
 
 
 make
-====================
+=============================
 
 ::
 
 	cd gopath/src/
-	cd ./github.com/kubernetes-incubator/external-storage/ceph/cephfs/
-	make ceph/cephfs/
+	cd ./github.com/kubernetes-incubator/external-storage/
 	
+这里如果 make ceph/cephfs/ 直接这么走，会报如下错误。
+
+::
+
+	[tom@test_240 external-storage]$ make ceph/cephfs/
+	make: 对“ceph/cephfs/”无需做任何事。
+	[tom@test_240 external-storage]$ 
+
+
+所以要	cd ceph/cephfs/ && make ，如下：
+
+::
+
+	[tom@test_240 external-storage]$ cd ceph/cephfs/
+	[tom@test_240 cephfs]$ ls
+	cephfs_provisioner     ceph-secret-admin.yaml  claim.yaml  configmap.yaml   Dockerfile      Makefile  README.md
+	cephfs-provisioner.go  CHANGELOG.md            class.yaml  deployment.yaml  local-start.sh  OWNERS    test-pod.yaml
+	[tom@test_240 cephfs]$ make
+	CGO_ENABLED=0 GOOS=linux go build -a -ldflags '-extldflags "-static"' -o cephfs-provisioner cephfs-provisioner.go
+	[tom@test_240 cephfs]$ 
+	
+
 这个时候，在 ceph/cephfs/ 下会多出一个 cephfs-provisioner 文件
 
 ::
@@ -95,7 +116,7 @@ make
 	[tom@test_240 cephfs]$ 
 
 make push
-====================
+=============================
 
 生成 docker image , quay.io/external_storage/cephfs-provisioner
 
@@ -114,7 +135,7 @@ make push
 	[tom@test_240 cephfs]$ 
 
 push 到 registry
-============================
+=============================
 
 因为有 reg.jlch.com:5000 这个 registry 了，先登录
 
@@ -131,6 +152,6 @@ push 到 registry
 	docker rmi reg.jlch.com:5000/quay.io/external_storage/cephfs-provisioner:20171114
 
 game over
-============================
+=============================
 
 
