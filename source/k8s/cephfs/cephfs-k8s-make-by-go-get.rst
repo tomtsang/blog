@@ -24,6 +24,13 @@ cephfs-k8s-make-by-go-get
 	mkdir gopath
 	export GOPATH=/home/jlch/gopath/
 
+go get 
+====================
+
+::
+
+	go get github.com/kubernetes-incubator/external-storage
+
 配置 Dockerfile
 ================
 
@@ -70,19 +77,60 @@ cephfs-k8s-make-by-go-get
 	root@km:~/cephfs# 
 
 
-
-	
-	
-go get 且 make
+make
 ====================
 
 ::
 
-	go get github.com/kubernetes-incubator/external-storage
 	cd gopath/src/
-	cd /github.com/kubernetes-incubator/external-storage/ceph/cephfs/
+	cd ./github.com/kubernetes-incubator/external-storage/ceph/cephfs/
 	make ceph/cephfs/
 	
-	
+这个时候，在 ceph/cephfs/ 下会多出一个 cephfs-provisioner 文件
+
+::
+
+	[tom@test_240 cephfs]$ ls
+	cephfs_provisioner  cephfs-provisioner  cephfs-provisioner.go  ceph-secret-admin.yaml  CHANGELOG.md  claim.yaml  class.yaml  configmap.yaml  deployment.yaml  Dockerfile  local-start.sh  Makefile  OWNERS  README.md  test-pod.yaml
+	[tom@test_240 cephfs]$ 
+
+make push
+====================
+
+生成 docker image , quay.io/external_storage/cephfs-provisioner
+
+::
+
+	make push
+
+如果说出现下面这个样子，说明是 make 成了 docker image了，但是 Push 没有成功（应该是指 push 到 docker.io 没有成功）
+
+::
+
+	79c182856123: Preparing 
+	cf516324493c: Preparing 
+	unauthorized: access to the requested resource is not authorized
+	make: *** [push] 错误 1
+	[tom@test_240 cephfs]$ 
+
+push 到 registry
+============================
+
+因为有 reg.jlch.com:5000 这个 registry 了，先登录
+
+::
+
+	docker login reg.jlch.com:5000
+	docker tag quay.io/external_storage/cephfs-provisioner:latest reg.jlch.com:5000/quay.io/external_storage/cephfs-provisioner:20171114
+	docker push reg.jlch.com:5000/quay.io/external_storage/cephfs-provisioner:20171114
+
+删除
+
+::
+
+	docker rmi reg.jlch.com:5000/quay.io/external_storage/cephfs-provisioner:20171114
+
+game over
+============================
 
 
