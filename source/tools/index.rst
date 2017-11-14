@@ -17,3 +17,4 @@ Contents:
    postgresql
    kindle/index
    Jolt/index
+   kxsw/index

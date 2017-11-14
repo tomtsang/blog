@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-docker-registry-ui
-==========================
+科学上网
+==========
 
 Contents:
 
@@ -12,5 +12,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   docker-registry
-   docker-registry-ui
+   kxsw
