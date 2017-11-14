@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-kubernetes
-==========
+kubernetes upgrade
+====================
 
 Contents:
 
@@ -12,9 +12,5 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   install/index
-   upgrade/index
-   storage
-   cephfs/index
-   source
+   upgrade-1.7.3-to-1.8.2
 
