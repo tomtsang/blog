@@ -13,3 +13,4 @@ Contents:
    :numbered: 2
 
    vs-code-debug-nodejs-fork
+   code-open
