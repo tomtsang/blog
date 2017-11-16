@@ -13,3 +13,4 @@ Contents:
    :numbered: 2
 
    update-kernel/index
+   how-to-install-certificates-for-command-line
