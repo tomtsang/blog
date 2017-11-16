@@ -124,3 +124,11 @@ Archive the artifacts
 
 然后,我直接上 slave 节点, 去把 工程 clone 下来, 然后直接跑 mvn clean package, 然后输出与 jenkins 日志一样, 确实是报错了.
 
+错误如下:
+
+::
+
+    No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+
+怎么办?
+
