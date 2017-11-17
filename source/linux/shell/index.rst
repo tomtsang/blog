@@ -13,3 +13,4 @@ Contents:
    :numbered: 2
 
    ping-ip
+   path
