@@ -15,6 +15,7 @@ Contents:
    jenkins.io/index
    line/index
    install/index
+   jenkins-gitlocal/index
    jenkins-the-definitive-guide/index
    test
    followtheofficial

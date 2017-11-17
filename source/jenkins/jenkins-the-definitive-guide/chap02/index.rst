@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-jenkins-the-definitive-guide
+chap02
 ===============================
 
 Contents:
@@ -12,5 +12,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   README
-   chap02/index
+   chap02

@@ -75,6 +75,15 @@ http://www.jianshu.com/p/98db1b956fc7
 
 https://m.baidu.com/from=844b/bd_page_type=1/ssid=0/uid=0/pu=usm%401%2Csz%40320_1001%2Cta%40iphone_2_6.0_3_537/baiduid=9BA967E9C8E4C323A6AEA4C66F00BD27/w=10_10_/t=iphone/l=3/tc?ref=www_iphone&lid=6412330391215166211&order=7&fm=alop&tj=www_normal_7_10_10_title&vit=osres&m=8&srd=1&cltj=cloud_title&asres=1&title=jenkins%E4%BB%8Egit%E6%8B%89%E5%8F%96%E4%BB%A3%E7%A0%81-whendream-%E5%8D%9A%E5%AE%A2%E5%9B%AD&dict=30&w_qd=IlPT2AEptyoA_yivGU7mIisbfwHORam8J_&sec=24792&di=63896ecf77f36d6a&bdenc=1&tch=124.256.287.1433.2.727&nsrc=IlPT2AEptyoA_yixCFOxXnANedT62v3IEQGG_ytK1DK6mlrte4viZQRAWCTqLmuTEFGwdoSOxBt8x8Sh_m1e7gwTaP1s&eqid=58fd2c844ed254001000000059e7f751&wd=&clk_info=%7B%22srcid%22%3A%221599%22%2C%22tplname%22%3A%22www_normal%22%2C%22t%22%3A1508374555853%2C%22sig%22%3A%2255471%22%2C%22xpath%22%3A%22div-a-h3%22%7D&sfOpen=1
 
+
+https://juejin.im/entry/58f18fc2570c3500562cb433
+
+
 成功
 ^^^^^^^^^^^^^^^^^
 http://www.jianshu.com/p/22b7860b4e81
+
+github token
+
+ccc07f79bdf263a671eb5779270435d638946e07
+
