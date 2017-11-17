@@ -13,3 +13,5 @@ Contents:
    :numbered: 2
 
    before-install
+   upgrade-v1.8.3-failure-install-v1.8.3
+   delete-node
