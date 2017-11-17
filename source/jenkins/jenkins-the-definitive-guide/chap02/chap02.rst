@@ -1,18 +1,20 @@
 =======================
-chap02
+maven config
 =======================
+
+配置你的 Maven 设置
 
 env
 ====================
 
 ::
 
-    192.168.31.181 master
-    192.168.31.172 slave1
-    192.168.31.240 slave2
+    192.168.31.181 master centos7
+    192.168.31.172 slave1 ubuntu16
+    192.168.31.240 slave2 centos7
 
 slave 节点安装 maven
-=========================
+========================================
 
 http://maven.apache.org/download.cgi
 
@@ -131,4 +133,53 @@ Archive the artifacts
     No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
 
 怎么办?
+
+解决 "No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?"
+========================================================================================================= 
+
+网上有一些文章都是在说 eclipse 下的配置, 与我们的环境不符嘛.
+
+https://stackoverflow.com/questions/26313902/maven-error-perhaps-you-are-running-on-a-jre-rather-than-a-jdk
+
+提出使用
+`apt-get install openjdk-7-jdk openjdk-7-doc openjdk-7-jre-lib`
+但是我们的 slave 是 centos7. 
+接着查到了
+http://blog.csdn.net/cdnight/article/details/78293767
+
+先安装
+yum install java-devel -y
+试一下.来吧
+
+::
+
+    sudo yum install java-devel -y
+    cd game-of-life/
+    ls
+    mvn clean package
+    .....
+    [INFO] gameoflife-web ..................................... SUCCESS [ 35.860 s]
+    [INFO] ------------------------------------------------------------------------
+    [INFO] BUILD SUCCESS
+    [INFO] ------------------------------------------------------------------------
+    [INFO] Total time: 49.793 s
+    [INFO] Finished at: 2017-11-17T09:40:58+08:00
+    [INFO] Final Memory: 30M/337M
+    [INFO] ------------------------------------------------------------------------
+    [jenkins@test_240 game-of-life]$
+
+我去,成功了.哈哈哈哈~~~~
+
+重新jenkins构建
+=================
+
+打开 http://192.168.31.181:8080/
+
+点击 立即构建 .
+
+哈哈, 成功了.
+
+到这里,说明 maven 是配置OK了.
+
+
 
