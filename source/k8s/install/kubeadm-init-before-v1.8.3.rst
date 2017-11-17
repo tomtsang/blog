@@ -226,6 +226,14 @@ kubelet 服务检查
     Nov 17 17:54:32 km kubelet[28824]: W1117 17:54:32.114163   28824 helpers.go:847] eviction manager: no observation found for eviction signal allocatableNodeFs.available
     root@km:/lib/systemd/system# 
 
+如果说, 想保证重开机也生效,那就直接
+https://askubuntu.com/questions/214805/how-do-i-disable-swap
+来吧.
+
+::
+
+    sudo swapoff -a  
+    
 成功了。
 
 kubelet stop
