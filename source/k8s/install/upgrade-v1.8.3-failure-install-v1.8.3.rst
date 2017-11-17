@@ -67,3 +67,6 @@ Installing kubeadm, kubelet and kubectl
     0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
     root@km:~# 
 
+
+去下一个页面吧
+https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/
