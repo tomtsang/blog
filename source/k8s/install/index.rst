@@ -15,3 +15,4 @@ Contents:
    before-install
    upgrade-v1.8.3-failure-install-v1.8.3
    delete-node
+   kubeadm-install-v1.8.3
