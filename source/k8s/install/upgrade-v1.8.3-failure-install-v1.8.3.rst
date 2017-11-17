@@ -70,3 +70,10 @@ Installing kubeadm, kubelet and kubectl
 
 去下一个页面吧
 https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/
+
+kubelet 服务检查
+=====================
+
+后来发现，在这里应该测试一下 kubelet.service。
+
+原来，虽然我 apt install kubelet , 但是， 遗留了 /etc/
