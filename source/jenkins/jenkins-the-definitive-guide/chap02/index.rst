@@ -12,4 +12,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   chap02
+   maven-config
