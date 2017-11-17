@@ -42,3 +42,9 @@ mysql use
 
     mysqldump -u root -p -T/tmp/ test factor_info --fields-terminated-by=',' 
 
+查 hq_online_cjmx库 中表的个数
+
+::
+
+    SELECT count(TABLE_NAME) FROM information_schema.TABLES WHERE TABLE_SCHEMA='hq_online_cjmx';
+
