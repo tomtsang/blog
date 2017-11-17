@@ -13,6 +13,7 @@ Contents:
 
    k8s/index
    fat/index
+   devops/index
    linux/index
    redis/index
    Framework-Benchmarks/index
