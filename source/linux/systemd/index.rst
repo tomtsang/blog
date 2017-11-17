@@ -13,3 +13,4 @@ Contents:
    :numbered: 2
 
    daemon-reload
+   list-units
