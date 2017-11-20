@@ -4,7 +4,7 @@ maven config
 
 配置你的 Maven 设置
 
-env
+env1
 ====================
 
 ::
@@ -12,6 +12,15 @@ env
     192.168.31.181 master centos7
     192.168.31.172 slave1 ubuntu16
     192.168.31.240 slave2 centos7
+
+env2
+====================
+
+::
+
+    120.25.204.216 master jlchaliyun
+    120.234.23.98 slave1 jlchsecdn
+    202.104.136.202 slave2 jlchsetom
 
 slave 节点安装 maven
 ========================================
@@ -116,7 +125,9 @@ Invoke top-level Maven targets
 Archive the artifacts
  	用于存档的文件	写入: **/target/*.jar
 
-
+Publish JUnit the result report
+    测试报告（XML）写入: gameoflife-core/target/surefire-reports/*.xml
+    
 立即构建
 =====================
 
