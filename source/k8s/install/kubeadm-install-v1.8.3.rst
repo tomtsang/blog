@@ -187,3 +187,7 @@ docker registry push
 
 
 
+kubeadm-init-use-local-image
+=========================================
+
+参看 kubeadm-init-use-local-image.rst 文件。
