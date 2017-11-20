@@ -125,7 +125,9 @@ Invoke top-level Maven targets
 Archive the artifacts
  	用于存档的文件	写入: **/target/*.jar
 
-
+Publish JUnit the result report
+    测试报告（XML）写入: gameoflife-core/target/surefire-reports/*.xml
+    
 立即构建
 =====================
 
