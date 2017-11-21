@@ -4,8 +4,8 @@
    contain the root `toctree` directive.
 
 
-docker
-==========
+docker-install
+=================
 
 Contents:
 
@@ -13,5 +13,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   docker-registry/index
-   docker-install-ubuntu/index
+   docker-install-ubuntu
