@@ -10,6 +10,7 @@ https://github.com/XX-net/XX-Net
 
 https://github.com/Alvin9999/new-pac/wiki
 
+https://blog.phpgao.com/slip_across_gfw.html
 
 google 搜索
 --------------------------
@@ -32,6 +33,8 @@ https://vpntuijian.github.io/
 3、妙速	注册可获得500M流量，每个新用户均送10元余额,	最低￥18/月	官网直达
 4、云影SS	3G流量，有效期7天	最低￥20/月	官网直达
 
+我基于这个 加速度 买了。哈哈。还不错哟。
+http://abc.36fy.com/clientarea.php?action=productdetails&id=84191
 
 
 
