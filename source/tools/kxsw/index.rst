@@ -13,3 +13,5 @@ Contents:
    :numbered: 2
 
    kxsw
+   kxsw-jiasudu
+   privoxy-socks5-http
