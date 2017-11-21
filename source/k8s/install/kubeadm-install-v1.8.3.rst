@@ -209,6 +209,23 @@ kubeadm init
 ::
 
     root@km:~# kubeadm init --pod-network-cidr=10.244.0.0/16 --skip-preflight-checks
+    ....
+    ....
+    ....
+    To start using your cluster, you need to run (as a regular user):
+
+    mkdir -p $HOME/.kube
+    sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+    sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+    You should now deploy a pod network to the cluster.
+    Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+    http://kubernetes.io/docs/admin/addons/
+
+    You can now join any number of machines by running the following on each node
+    as root:
+
+    kubeadm join --token ce4253.8322cc2590378260 192.168.31.120:6443 --discovery-token-ca-cert-hash sha256:bb0b9ef27e5ffef06776ca10a87ed548cefedc703ddaf904316c87d4a7f3655d
 
 有image, 而不能启动docker container.
 
