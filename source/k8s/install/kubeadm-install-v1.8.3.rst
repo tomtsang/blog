@@ -191,3 +191,24 @@ kubeadm-init-use-local-image
 =========================================
 
 参看 kubeadm-init-use-local-image.rst 文件。
+
+好像没成功
+
+kubeadm init
+=========================================
+
+::
+
+    root@km:~# export
+    ...
+    declare -x http_proxy="http://192.168.31.239:8118/"
+    declare -x https_proxy="http://192.168.31.239:8118/"
+    declare -x no_proxy="localhost,127.0.0.1,192.168.31.120,10.96.0.10,github.com,ubuntu.com"
+
+
+::
+
+    root@km:~# kubeadm init --pod-network-cidr=10.244.0.0/16 --skip-preflight-checks
+
+有image, 而不能启动docker container.
+
