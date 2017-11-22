@@ -26,6 +26,7 @@ kubeadm join
 sudo kubeadm join --token ce4253.8322cc2590378260 192.168.31.120:6443 --discovery-token-ca-cert-hash sha256:bb0b9ef27e5ffef06776ca10a87ed548cefedc703ddaf904316c87d4a7f3655d
 
 这个来自于 master节点， kubeadm init 后的提示。
+
 ::
 
     jlch@kn1:~$ sudo kubeadm join --token ce4253.8322cc2590378260 192.168.31.120:6443 --discovery-token-ca-cert-hash sha256:bb0b9ef27e5ffef06776ca10a87ed548cefedc703ddaf904316c87d4a7f3655d
@@ -59,6 +60,8 @@ Please disable swap
 
 再来
 ---------------------------------------------
+
+::
 
     jlch@kn1:~$ sudo kubeadm join --token ce4253.8322cc2590378260 192.168.31.120:6443 --discovery-token-ca-cert-hash sha256:bb0b9ef27e5ffef06776ca10a87ed548cefedc703ddaf904316c87d4a7f3655d
     [kubeadm] WARNING: kubeadm is in beta, please do not use it for production clusters.
