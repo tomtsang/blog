@@ -13,9 +13,12 @@ Contents:
    :numbered: 2
 
    before-install
-   upgrade-v1.8.3-failure-install-v1.8.3
    kubeadm-init-before-v1.8.3
+   kubeadm-install-ubuntu-v1.8.4
+   kubeadm-join
+   upgrade-v1.8.3-failure-install-v1.8.3
    kubeadm-install-v1.8.3
    kubeadm-init-use-local-image
    kubeadm-build
    delete-node
+   kubeadm-install-FAQ
