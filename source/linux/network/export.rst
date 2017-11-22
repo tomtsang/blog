@@ -7,12 +7,15 @@ shell 下
 ===================================================
 
 ::
-
+    root@km:~# export http_proxy="http://192.168.31.239:8118/"
+    root@km:~# export https_proxy="http://192.168.31.239:8118/"
+    root@km:~# export no_proxy="localhost,127.0.0.1,192.168.31.120,10.96.0.10,github.com,ubuntu.com"
     root@km:~# export
     ...
     declare -x http_proxy="http://192.168.31.239:8118/"
     declare -x https_proxy="http://192.168.31.239:8118/"
     declare -x no_proxy="localhost,127.0.0.1,192.168.31.120,10.96.0.10,github.com,ubuntu.com"
+
 
 no_proxy
 
