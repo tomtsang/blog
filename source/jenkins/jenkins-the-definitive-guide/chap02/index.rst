@@ -14,3 +14,4 @@ Contents:
 
    maven-config
    javadoc
+   cobertura
