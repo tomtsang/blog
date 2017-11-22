@@ -15,3 +15,4 @@ Contents:
    docker-registry
    docker-registry-ui
    docker-registry-push-pull
+   docker-login-failure
