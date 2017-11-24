@@ -88,6 +88,8 @@ Create a Ceph admin secret
 
 	ceph auth get client.admin 2>&1 |grep "key = " |awk '{print  $3'} |xargs echo -n > /tmp/secret
 	
+把这个/tmp/secret 弄到 k8s-master 的 /tmp/secret
+
 在 k8s-master 下
 
 ::
@@ -101,7 +103,9 @@ Start CephFS provisioner
 方法1 deployment.yaml
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-此方法的具体细节见 cephfs-k8s-deployment-faq.rst 
+此方法的具体细节见 cephfs-k8s-deployment-faq.rst, `cephfs-k8s-deployment-faq.rst`_
+
+.. _cephfs-k8s-deployment-faq.rst: http://blogtt.readthedocs.io/en/latest/k8s/cephfs/cephfs-k8s-deployment-faq.html
 
 ::
 
