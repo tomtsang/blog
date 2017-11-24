@@ -12,4 +12,5 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
+    README
     Configuring-the-Mail-Server
