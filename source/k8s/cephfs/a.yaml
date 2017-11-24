@@ -1,0 +1,47 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: cephfs-provisioner
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: cephfs-provisioner
+    spec:
+      containers:
+      - name: cephfs-provisioner
+        image: "quay.io/external_storage/cephfs-provisioner:latest"
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: PROVISIONER_NAME
+          valueFrom:
+            configMapKeyRef:
+              key: provisioner.name
+              name: cephfs-provisioner
+        command:
+          - "/usr/local/bin/cephfs-provisioner"
+        args:
+          - "-id=cephfs-provisioner-1"
+          - "-master=https://10.96.0.1/"
+          - "-kubeconfig=/kube/admin.conf" 
+        volumeMounts:
+          - mountPath: /kube
+            name: kube-config
+          - mountPath: /var/run/kubernetes
+            name: kube-run-env
+      volumes:
+      - name: kube-config
+        hostPath:
+          # directory location on host
+          path: /home/jlch
+          # this field is optional
+          type: Directory
+      - name: kube-run-env
+        hostPath:
+          # directory location on host
+          path: /var/run/kubernetes
+          # this field is optional
+          type: Directory

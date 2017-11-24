@@ -2,12 +2,34 @@
 cephfs-k8s-make-by-go-get
 =============================
 
+
+ENV
+==================================================
+
+::
+
+	k8s-master 192.168.31.120 km master
+	k8s-node1 192.168.31.119 kn1 node1
+	k8s-node2 192.168.31.118 kn2 node2
+	ceph-client 192.168.31.172
+	ceph-mon1 192.168.31.114
+
+这次的make, 可以在任何地方完成，只要满足：golang 1.7 以上的版本
+
+我在 km,ceph-client,ceph-mon1 上都完成过
+
+安装golang
+==================================================
+
+如果已有安装，请忽略这一步
+
 安装 golang 1.7 以上的版本。 我们这里安装 1.9.1
 
 	cd /home/jlch/
 	tar -xvf go1.9.2.linux-amd64.tar
 	ls go
 	export PATH=$PATH:/home/jlch/go/bin
+
 
 验证go 
 =============================
