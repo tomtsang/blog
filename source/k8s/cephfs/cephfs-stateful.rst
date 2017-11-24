@@ -15,7 +15,7 @@
 	cephfs-monitor 192.168.31.114
 	cephfs-client 192.168.31.172
 
-各 k8s-node 安装完 nfs-common
+各 k8s-node 安装完 ceph-common(sudo apt install ceph-common -y)
 
 准备
 ======================================
