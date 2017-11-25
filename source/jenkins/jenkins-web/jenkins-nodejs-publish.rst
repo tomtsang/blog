@@ -4,8 +4,6 @@ jenkins-nodejs-publish
 
 使用Jenkins自动部署nodejs应用
 
-http://blog.csdn.net/frank_good/article/details/68930286
-
 env
 =================================
 
@@ -13,6 +11,11 @@ env
 
     120.25.204.216 jenkins master
     10.10.15.181 jenkins remote-server
+
+reference
+=================================
+
+http://blog.csdn.net/frank_good/article/details/68930286
 
 安装插件
 ==================================
