@@ -12,8 +12,8 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-    REAEME
-    cephfs-stateful
+   REAEME
+   cephfs-stateful
     cephfs-k8s-make-by-go-get
     cephfs-k8s-deployment-faq
     cephfs-k8s-yaml
