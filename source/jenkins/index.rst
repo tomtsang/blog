@@ -12,10 +12,10 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   jenkins.io/index
-   line/index
    install/index
-   jenkins-gitlocal/index
+   jenkins.io/index
    jenkins-the-definitive-guide/index
+   jenkins-gitlocal/index
+   jenkins-web/index
+   line/index
    test
-   followtheofficial

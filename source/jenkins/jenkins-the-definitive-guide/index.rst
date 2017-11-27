@@ -14,3 +14,4 @@ Contents:
 
    README
    chap02/index
+   chap04/index

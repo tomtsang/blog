@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-cephfs
-==========
+jenkins web
+=============
 
 Contents:
 
@@ -12,10 +12,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   REAEME
-   cephfs-stateful
-   cephfs-k8s-make-by-go-get
-   cephfs-k8s-deployment-faq
-   cephfs-k8s-yaml
-   cephfs-k8s-make
-   cephfs-k8s-faq
+   jenkins-nodejs-publish
