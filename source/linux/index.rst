@@ -23,3 +23,4 @@ Contents:
    shell/index
    network/index
    cat/index
+   chkconfig/index
