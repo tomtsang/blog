@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-linux
+linux ssh
 ==========
 
 Contents:
@@ -12,16 +12,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   systemd/index
-   mirrors/indexu
-   grep/index
-   command_not_found/index
-   mount/index
-   firewalld/index
-   snapd/index
-   fsck/index
-   shell/index
-   network/index
-   cat/index
-   chkconfig/index
-   sshd/index
+   ssh-slow
