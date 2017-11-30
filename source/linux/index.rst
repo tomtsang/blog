@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 linux
-==========
+=================
 
 Contents:
 
@@ -25,3 +25,8 @@ Contents:
    cat/index
    chkconfig/index
    sshd/index
+   rescue/index
+
+
+
+
