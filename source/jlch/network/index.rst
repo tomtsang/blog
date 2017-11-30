@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-jlch
-==========
+jlch network
+====================================================
 
 Contents:
 
@@ -12,8 +12,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   deploy/index
-   openx/index
-   record/index
-   dxjl/index
-   network/index
+   ip-from-31-to-10
