@@ -13,3 +13,4 @@ Contents:
    :numbered: 2
 
    rescue-centos
+   rescue-mount-unknown-filesystem-type-lvm2_member
