@@ -41,7 +41,7 @@ step
     netmask 255.255.255.0
     gateway 10.10.12.1
     # dns-* options are implemented by the resolvconf package, if installed
-    dns-nameservers 114.114.114.114
+    dns-nameservers 202.96.134.133
 
     bond-mode 0
     bond-miimon 100
@@ -77,6 +77,9 @@ step
     Nov 30 02:23:25 ubuntu ifup[50624]: Waiting for bond master bond0 to be ready
     Nov 30 02:23:26 ubuntu systemd[1]: Started Raise network interfaces.
 
+在重启后，可能就会断开连接了。
+这个时候需要网络工程师作调整（请通知他），则，直到网络工程师调整完成后，再次 ssh 连接。
+
 检查
 --------------------------------------
 
@@ -105,6 +108,11 @@ step
         valid_lft forever preferred_lft forever
         inet6 fe80::1a66:daff:fe9d:ca62/64 scope link 
         valid_lft forever preferred_lft forever
+    jlch@ubuntu:~$ ping 10.10.12.1
     jlch@ubuntu:~$ 
 
-如果说需要网络工程师作调整，则在重启后，会断开连接，直到网络工程师调整完成后，再次 ssh 连接。
+ping 10.10.12.1 正常，说明网络已经OK了。
+
+注意，这里虽然 eno1 为 192.168.31.247，且可以做到 ping 192.168.31.247, 但是，ping 192.168.31.1 已不通。这个无关紧要了。
+
+
