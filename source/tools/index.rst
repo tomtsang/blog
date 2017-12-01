@@ -18,3 +18,6 @@ Contents:
    kindle/index
    Jolt/index
    kxsw/index
+   markdown
+   ntopng
+   Træfik
