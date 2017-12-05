@@ -21,3 +21,4 @@ Contents:
    markdown
    ntopng
    Træfik
+   gobgp
