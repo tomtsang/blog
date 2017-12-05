@@ -207,7 +207,35 @@ Environment
     root@kn1:~# 
 
 
+kubeadm init
+=============================================
 
+kubeadm init
+---------------------------------------------
+
+::
+
+    kubeadm init --pod-network-cidr=10.244.0.0/16 --skip-preflight-checks
+
+安装 flannel
+---------------------------------------------
+
+::
+
+    kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+
+flannel 各节点开端口
+
+https://github.com/coreos/flannel/blob/476abd9ef37e7111a1268c41afbd7154046b492a/Documentation/troubleshooting.md#firewalls
+
+::
+
+    ufw allow 8472
+
+测试
+---------------------------------------------
+
+ping 各pod 的 IP 
 
 kubeadm join
 =============================================
