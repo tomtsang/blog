@@ -14,3 +14,4 @@ Contents:
 
    181
    log-bin
+   TechEmpower-my.cnf
