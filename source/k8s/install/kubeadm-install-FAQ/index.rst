@@ -13,3 +13,4 @@ Contents:
    :numbered: 2
 
    kubeadm-kubelet-cni
+   kube-flannel-ping-wrong
