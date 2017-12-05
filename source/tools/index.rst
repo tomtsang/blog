@@ -22,3 +22,4 @@ Contents:
    ntopng
    Træfik
    gobgp
+   mirrorgooglecontainers
