@@ -17,4 +17,5 @@ Contents:
    storage
    cephfs/index
    source
+   awesome-cloud-native
 
