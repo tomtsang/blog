@@ -23,3 +23,4 @@ Contents:
    Træfik
    gobgp
    mirrorgooglecontainers
+   OSSEC-OSSIM
