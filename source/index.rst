@@ -26,6 +26,7 @@ Contents:
    ceph/index
    vs-code/index
    ubuntu/index
+   network/index
    javascript/index
    tools/index
    zabbix/index
