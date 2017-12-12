@@ -4,12 +4,21 @@ jenkins-nodejs-publish
 
 使用Jenkins自动部署nodejs应用
 
-env
+env1
 =================================
 
 ::
 
     120.25.204.216 jenkins master
+    10.10.15.181 jenkins remote-server
+
+
+env2
+=================================
+
+::
+
+    10.10.15.181 jenkins master
     10.10.15.181 jenkins remote-server
 
 reference
@@ -21,6 +30,19 @@ http://blog.csdn.net/frank_good/article/details/68930286
 ==================================
 
 系统管理 -> 插件管理 
+
+主要是安装  Publish Over SSH, SSH plugin
+
+::
+
+    GIT client 
+    GIT 
+    Git server  
+    GitHub API  
+    GitHub  
+    SSH Credentials  
+    SSH  
+    Publish Over SSH
 
 安装完成后，重新启动 jenkins。
 如果无法自动重启，可以输入 '/restart' 在地址栏，即可手动重启。
