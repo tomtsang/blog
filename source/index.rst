@@ -37,6 +37,7 @@ Contents:
    vsphere/index
    code/index
    jlch/index
+   bitcoin/index
    helloworld
    en/quickstart
 
