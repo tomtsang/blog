@@ -27,6 +27,7 @@ Contents:
    curl/index
    sshd/index
    rescue/index
+   io-cpu-mem
 
 
 
