@@ -13,3 +13,4 @@ Contents:
    :numbered: 2
 
    mysqldump
+   optimize-a-mysqldump-of-a-large-database
