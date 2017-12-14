@@ -3,19 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-mysql
-==========
+innobackupex
+============================
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
-   :numbered: 2
 
-   mysqladmin/index
-   mysqldump/index
-   innobackupex/index
-   FAQ/index
-   jlch
-   config/index
-   mysql-use
+   使用innobackupex备份和恢复MySQL
+
