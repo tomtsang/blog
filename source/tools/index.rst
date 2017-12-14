@@ -24,3 +24,4 @@ Contents:
    gobgp
    mirrorgooglecontainers
    OSSEC-OSSIM
+   jq
