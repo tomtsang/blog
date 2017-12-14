@@ -25,3 +25,4 @@ Contents:
    mirrorgooglecontainers
    OSSEC-OSSIM
    jq
+   meteor
