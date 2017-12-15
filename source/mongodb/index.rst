@@ -14,3 +14,4 @@ Contents:
 
    mongoexport/index
    Replication-Methods/index
+   mongodb-install-faq
