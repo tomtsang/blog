@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-mongodb
-==========
+Replication-Methods
+======================
 
 Contents:
 
@@ -12,5 +12,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   mongoexport/index
-   Replication-Methods/index
+   Replication-Methods
