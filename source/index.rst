@@ -22,6 +22,7 @@ Contents:
    mysql/index
    mongodb/index
    html/index
+   log/index
    nfs/index
    ceph/index
    vs-code/index
