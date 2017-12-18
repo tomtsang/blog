@@ -27,6 +27,7 @@ Contents:
    ceph/index
    vs-code/index
    ubuntu/index
+   centos/index
    network/index
    javascript/index
    tools/index
