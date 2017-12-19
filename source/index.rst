@@ -40,6 +40,7 @@ Contents:
    code/index
    jlch/index
    bitcoin/index
+   virtualbox/index
    helloworld
    en/quickstart
 
