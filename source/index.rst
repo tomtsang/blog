@@ -30,6 +30,7 @@ Contents:
    centos/index
    network/index
    javascript/index
+   java/index
    tools/index
    zabbix/index
    ruby/index
