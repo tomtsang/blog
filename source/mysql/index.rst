@@ -19,3 +19,4 @@ Contents:
    jlch
    config/index
    mysql-use
+   SQLadvisor
