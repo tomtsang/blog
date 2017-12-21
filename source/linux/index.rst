@@ -26,6 +26,7 @@ Contents:
    chkconfig/index
    curl/index
    sshd/index
+   screen/index
    rescue/index
    io-cpu-mem
 
