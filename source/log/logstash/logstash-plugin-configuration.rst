@@ -75,6 +75,8 @@ outputs是logstash处理管道的最末端组件。一个event可以在处理过
     tcp: 发送网络数据. 不建议使用.
     hadoop_webhdfs: Post data to WebHDFS.
     hdfs: it import java classes like "org.apache.hadoop.fs.FileSystem" etc.
+    redis: 输出到redis
+    juggernaut: 基于redis服务器和socker.io框架构建的, 利用它, logstash 可以直接向 webkit等支持 socket.io 的浏览器推送告警信息.
 
 
 
