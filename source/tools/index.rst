@@ -26,3 +26,4 @@ Contents:
    OSSEC-OSSIM
    jq
    meteor
+   DSL
