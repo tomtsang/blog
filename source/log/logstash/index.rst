@@ -12,3 +12,4 @@ Contents:
    :maxdepth: 2
 
    getting-started-with-logstash
+   logstash-plugin-configuration
