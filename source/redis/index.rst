@@ -13,3 +13,4 @@ Contents:
    :numbered: 2
 
    redis-cluster/index
+   docker-redis-cli
