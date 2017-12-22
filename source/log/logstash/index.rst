@@ -13,3 +13,4 @@ Contents:
 
    getting-started-with-logstash
    logstash-plugin-configuration
+   rudiments-logstash-elasticsearch-kibana
