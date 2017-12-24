@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-log
+beats
 ============================
 
 Contents:
@@ -11,7 +11,5 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   log-source
-   logstash/index
-   beats/index
+   beats-basic
 
