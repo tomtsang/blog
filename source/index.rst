@@ -38,6 +38,7 @@ Contents:
    harbor/index
    soft-test/index
    vsphere/index
+   mac/index
    code/index
    jlch/index
    bitcoin/index
