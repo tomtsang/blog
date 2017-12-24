@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-beats
+filebeat
 ============================
 
 Contents:
@@ -11,6 +11,4 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   beats-basic
-   filebeat/index
-
+   filebeat-beats-relationship
