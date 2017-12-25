@@ -16,3 +16,4 @@ Contents:
    zabbix-debug-level
    zabbix-debug-1
    zabbix-bug-spell
+   Zabbix-discoverer-processes-more-than-75%-busy
