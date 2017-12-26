@@ -15,4 +15,5 @@ Contents:
    logstash/index
    beats/index
    elasticsearch/index
+   kibana/index
 
