@@ -14,4 +14,5 @@ Contents:
    log-source
    logstash/index
    beats/index
+   elasticsearch/index
 
