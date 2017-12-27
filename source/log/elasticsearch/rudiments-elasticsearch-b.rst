@@ -29,6 +29,8 @@ step
 
 安装插件 mobz/elasticsearch-head
 
+这里我是去 官网, https://github.com/mobz/elasticsearch-head, 用docker运行的, 很方便
+
 ::
 
     sudo docker run -p 9100:9100 mobz/elasticsearch-head:5
