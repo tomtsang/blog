@@ -12,4 +12,6 @@ Contents:
    :maxdepth: 2
 
    rudiments-elasticsearch
+   rudiments-elasticsearch-b
+   elasticsearch-plugin
 
