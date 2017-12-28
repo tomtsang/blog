@@ -13,3 +13,4 @@ Contents:
 
    filebeat-beats-relationship
    rudiments-filebeat
+   filebeat-config
