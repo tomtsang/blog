@@ -15,3 +15,4 @@ Contents:
    daemon-reload
    list-units
    conf
+   systemctl-service-chkconfig
