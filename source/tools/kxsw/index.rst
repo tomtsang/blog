@@ -15,3 +15,5 @@ Contents:
    kxsw
    kxsw-jiasudu
    privoxy-socks5-http
+   privoxy-socks5-http-linux
+   shadowsocks-ubuntu-install
