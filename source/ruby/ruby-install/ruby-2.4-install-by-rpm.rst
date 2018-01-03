@@ -38,13 +38,7 @@ ruby
 
 	rpm -ivh libyaml-0.1.4-11.el7_0.x86_64.rpm
 	rpm -ivh ruby-2.0.0.648-30.el7.x86_64.rpm ruby-libs-2.0.0.648-30.el7.x86_64.rpm rubygem-io-console-0.4.2-30.el7.x86_64.rpm rubygem-rdoc-4.0.0-30.el7.noarch.rpm rubygem-bigdecimal-1.2.0-30.el7.x86_64.rpm rubygem-psych-2.0.0-30.el7.x86_64.rpm rubygems-2.0.14.1-30.el7.noarch.rpm ruby-irb-2.0.0.648-30.el7.noarch.rpm rubygem-json-1.7.7-30.el7.x86_64.rpm
-	which ruby
-	ruby help
-	ruby --help
-	ruby gems ## 这个本身就不能运行的。
-	gem 
-	gem list --local
-	ruby -v
+
 
 加载 环境变量
 
@@ -55,10 +49,20 @@ ruby
     /opt/rh/rh-ruby24
     [root@localhost rh-ruby24]# ls
     enable  root
-    [root@localhost rh-ruby24]# cat enable >> /etc/profile
+    [root@localhost rh-ruby24]# cat /opt/rh/rh-ruby24/enable >> /etc/profile
     [root@localhost rh-ruby24]# source /etc/profile
 
 验证
+
+::
+
+	which ruby  # 这个时候, 可能还是没有 ruby的, 因为,没有加载 环境变量
+	ruby help
+	ruby --help
+	ruby gems ## 这个本身就不能运行的。
+	gem 
+	gem list --local
+	ruby -v
 
 ::
 
