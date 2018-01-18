@@ -182,3 +182,75 @@ route 是不是正确
     8  117.176.37.59.broad.dg.gd.dynamic.163data.com.cn (59.37.176.117)  2.008 ms^C
     [root@nginx nginx]#
 
+## 解决 问题
+
+根据网络工程师回忆, 确实是在调整运管商网络的过程中, 曾经切换过 路由至 10.10.11.254 , 也就意味着, 确实曾经使用过这个路由.
+
+那么就很有可能,在切换的过程中, 造成缓存了.(如在切换时, 116.62.200.151 发了请求过来, 而记住了之前的路由) 
+
+* 现在route
+* ip route flush cache
+* traceroute 116.62.200.151
+
+
+查看一下当下的route表
+
+::
+
+    [root@nginx jlch]# route
+    Kernel IP routing table
+    Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+    default         gateway         0.0.0.0         UG    100    0        0 em1
+    10.10.11.0      0.0.0.0         255.255.255.0   U     100    0        0 em1
+    10.10.12.0      0.0.0.0         255.255.255.0   U     100    0        0 em2
+
+清route 缓存
+
+::
+
+    [root@nginx jlch]# route flush cache
+    Flushing `inet' routing table not supported
+    Usage: inet_route [-vF] del {-host|-net} Target[/prefix] [gw Gw] [metric M] [[dev] If]
+        inet_route [-vF] add {-host|-net} Target[/prefix] [gw Gw] [metric M]
+                                [netmask N] [mss Mss] [window W] [irtt I]
+                                [mod] [dyn] [reinstate] [[dev] If]
+        inet_route [-vF] add {-host|-net} Target[/prefix] [metric M] reject
+        inet_route [-FC] flush      NOT supported
+    [root@nginx jlch]# ip route flush cache
+    [root@nginx jlch]# route
+    Kernel IP routing table
+    Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+    default         gateway         0.0.0.0         UG    100    0        0 em1
+    10.10.11.0      0.0.0.0         255.255.255.0   U     100    0        0 em1
+    10.10.12.0      0.0.0.0         255.255.255.0   U     100    0        0 em2
+
+测试 qq.com
+
+::
+
+    [root@nginx jlch]# traceroute 14.17.32.211
+    traceroute to 14.17.32.211 (14.17.32.211), 30 hops max, 60 byte packets
+    1  gateway (10.10.11.1)  0.873 ms  0.956 ms  1.175 ms
+    2  10.10.0.5 (10.10.0.5)  0.252 ms  0.312 ms  0.399 ms
+    3  202.104.136.193 (202.104.136.193)  11.141 ms  11.134 ms  11.122 ms
+    4  10.1.100.97 (10.1.100.97)  2.182 ms  9.326 ms  19.228 ms
+    5  10.1.100.26 (10.1.100.26)  1.900 ms  2.424 ms  2.424 ms
+    6  119.145.0.250 (119.145.0.250)  1.828 ms  1.975 ms  2.460 ms
+    7  57.104.38.59.broad.fs.gd.dynamic.163data.com.cn (59.38.104.57)  1.570 ms 61.104.38.59.broad.fs.gd.dynamic.163data.com.cn (59.38.104.61)  2.006 ms 57.104.38.59.broad.fs.gd.dynamic.163data.com.cn (59.38.104.57)  1.667 ms^C
+    
+traceroute 116.62.200.151
+    
+::
+
+    [root@nginx jlch]# traceroute 116.62.200.151
+    traceroute to 116.62.200.151 (116.62.200.151), 30 hops max, 60 byte packets
+    1  gateway (10.10.11.1)  0.832 ms  0.960 ms  1.177 ms
+    2  10.10.0.5 (10.10.0.5)  0.441 ms  0.724 ms  1.009 ms
+    3  202.104.136.193 (202.104.136.193)  6.082 ms  6.298 ms  6.289 ms
+    4  10.1.100.97 (10.1.100.97)  3.040 ms  3.412 ms  3.389 ms
+    5  10.1.100.26 (10.1.100.26)  3.700 ms  4.398 ms  4.611 ms
+    6  119.145.0.250 (119.145.0.250)  3.331 ms  3.316 ms  3.748 ms
+    7  57.104.38.59.broad.fs.gd.dynamic.163data.com.cn (59.38.104.57)  1.831 ms 61.104.38.59.broad.fs.gd.dynamic.163data.com.cn (59.38.104.61)  2.248 ms  2.602 ms^C
+    [root@nginx jlch]#  
+
+好了, 这一下, 终于可以让 116.62.200.151 这个来源的IP访问正常了. 
