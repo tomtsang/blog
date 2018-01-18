@@ -18,3 +18,4 @@ Contents:
    network-chuantou
    ip-get
    ip-route-tcpdump
+   firewalld
