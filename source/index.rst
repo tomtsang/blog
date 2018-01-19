@@ -24,6 +24,7 @@ Contents:
    html/index
    log/index
    nfs/index
+   network-security/index
    ceph/index
    vs-code/index
    ubuntu/index
