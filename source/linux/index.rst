@@ -29,6 +29,7 @@ Contents:
    screen/index
    rescue/index
    io-cpu-mem
+   resource
 
 
 
