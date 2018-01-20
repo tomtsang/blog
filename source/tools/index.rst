@@ -31,3 +31,4 @@ Contents:
    wework
    newrelic
    gist
+   mirrors
