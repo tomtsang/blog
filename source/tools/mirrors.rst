@@ -25,3 +25,7 @@ https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
 ===================================
 
 
+淘宝 NPM 镜像
+===================================
+
+https://npm.taobao.org/
