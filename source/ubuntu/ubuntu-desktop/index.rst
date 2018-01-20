@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-ubuntu
-==========
+ubuntu desktop
+================
 
 Contents:
 
@@ -12,6 +12,4 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   update-kernel/index
-   how-to-install-certificates-for-command-line
-   ubuntu-desktop/index
+   set-apt-source
