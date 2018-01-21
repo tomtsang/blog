@@ -12,7 +12,5 @@ Contents:
    :maxdepth: 2
    :numbered: 2
 
-   mongoexport/index
-   Replication-Methods/index
-   mongodb-install-faq
-   mongodb-gui/index
+   resource
+   robo-3t
