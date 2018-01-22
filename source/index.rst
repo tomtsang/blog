@@ -11,6 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   blockchain/index
    k8s/index
    fat/index
    devops/index
