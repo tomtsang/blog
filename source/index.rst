@@ -45,6 +45,7 @@ Contents:
    jlch/index
    bitcoin/index
    virtualbox/index
+   fex/index
    helloworld
    en/quickstart
 
