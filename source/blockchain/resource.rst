@@ -6,3 +6,4 @@ blockchain resource
 
 https://www.zhihu.com/question/51047975
 
+http://bitcoin-on-nodejs.ebookchain.org/
