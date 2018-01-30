@@ -34,7 +34,7 @@ https://vpntuijian.github.io/
 4、云影SS	3G流量，有效期7天	最低￥20/月	官网直达
 
 我基于这个 加速度 买了。哈哈。还不错哟。
-http://abc.36fy.com/clientarea.php?action=productdetails&id=84191
+http://center.36fy.com/clientarea.php?action=productdetails&id=122802
 
 
 
