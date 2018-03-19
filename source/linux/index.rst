@@ -30,6 +30,7 @@ Contents:
    rescue/index
    io-cpu-mem
    resource
+   passwd/index
 
 
 
