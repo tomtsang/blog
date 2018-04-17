@@ -49,9 +49,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'blog'
-copyright = '2017, tom tsang'
-author = 'tom tsang'
+project = 'Docs'
+copyright = '2018, tom'
+author = 'tom'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
