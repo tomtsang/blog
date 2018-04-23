@@ -25,6 +25,7 @@ step
 
 
 先给某一个测试 无线IP(这里为192.168.33.220)设置
+因为这里是双网卡机器, 所以这里最后应该写成 192.168.31.1 而不是本机IP 192.168.31.242
 
 ::
 
@@ -48,4 +49,4 @@ step
 ref
 =======================
 
-- [windows下添加路由](https://blog.csdn.net/wangzhen209/article/details/77748107)
+- `windows下添加路由 <https://blog.csdn.net/wangzhen209/article/details/77748107>`_.
