@@ -20,6 +20,7 @@ Contents:
    kxsw/index
    postman/index
    markdown
+   reStructuredText
    ntopng
    Træfik
    gobgp
